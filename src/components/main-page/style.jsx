@@ -22,7 +22,8 @@ const MainPageStyled=styled.div`
     justify-content: space-around;
     margin: 10px;
     padding: 10px;
-    color:${(props=>props.theme==="light"? "black" : "white")};
+ 
+    color:${(props=>props.theme==="light"? "#112b50" : "white")};
 
     }
     .overview-container{
@@ -129,6 +130,8 @@ const MainPageStyled=styled.div`
 
         .search-bar{
             width: 100%;
+            margin-left: 0.2rem;
+            padding: 0.6rem 0.8rem;
         }
         .search-bar button{
             margin: 0;
@@ -146,7 +149,7 @@ const MainPageStyled=styled.div`
 }
 .card-container{
   
-    margin: 5px 15px;
+    margin: 8px 8px;
     height: 5rem;
    
 

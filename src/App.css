@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+.container{
+  display: flex;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  
+}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +42,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (max-width: 768px) {
+
+    .container{
+      flex-direction: column;
+    }
+
 }

@@ -86,6 +86,13 @@ padding: 0;
     margin-left: 0;
 }
 
+@media (max-width: 768px) {
+    .main-container{
+        width:100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+}
+
 `
 
 export default LeftSideBarStyled;

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <AppContextProvider>
-        <div style={{ display: "flex" }} className="container">
+        <div style={{ background: "black" }} className="container">
           <MainPage />
           <LeftSideBar />
           <GetData />

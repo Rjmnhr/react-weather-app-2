@@ -53,13 +53,13 @@ return (
     <div className="header-container">
         <h1>{formattedDate}</h1>
         <div className="search-bar">
-            <FaSearch/>
+            <FaSearch className="fa-search"/>
         <input className="search-input" type="text"/>
         <button onClick={handleClick}>Search</button>
         </div>
        
     </div>
-<div  style={{display:"flex",width:"300px",justifyContent:"center",marginLeft:"50px",marginTop:"50px"}}>
+<div className="overview-header" >
 <h2 >Today overview</h2>
 </div>
     

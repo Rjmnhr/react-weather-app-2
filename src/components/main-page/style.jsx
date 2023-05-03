@@ -27,7 +27,7 @@ const MainPageStyled=styled.div`
     }
     .overview-container{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         color:${(props=>props.theme==="light"? "black" : "white")};
         align-items: center;
         /* border: 1px solid black; */
@@ -85,6 +85,8 @@ const MainPageStyled=styled.div`
     margin-left: 4.6rem;
 }
 
+
+
 .search-bar input{
     background: none;
     outline: none;
@@ -109,7 +111,56 @@ const MainPageStyled=styled.div`
     flex-direction: column;
     gap: 7px;
 }
+.overview-header{
+    margin-top: 30px;
+    display:flex;
+    justify-content: start;
+    margin-left: 110px;
+    color:gray
+}
 
+
+    @media (max-width: 768px) {
+    
+        .main-container{
+            width: 100%;
+            height: 70vh;
+        }
+
+        .search-bar{
+            width: 100%;
+        }
+        .search-bar button{
+            margin: 0;
+        }
+
+        .header-container h1{
+            font-size:20px;
+        }
+.header-container{
+    margin: 8px;
+    padding: 8px;
+  
+    justify-content:center;
+    gap: 5px;
+}
+.card-container{
+  
+    margin: 5px 15px;
+    height: 5rem;
+   
+
+    }
+    .overview-sub-container{
+        margin: 5px;
+        padding:5px;
+    }
+    .overview-header{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+}
 
 
 

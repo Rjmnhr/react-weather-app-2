@@ -41,7 +41,8 @@ try {
 
     const handleClick=()=>{
         const value=document.querySelector(".search-input").value;
-        setCity(value);
+        const valueLowerCased=value.toLowerCase();
+        setCity(valueLowerCased);
        
     }
 

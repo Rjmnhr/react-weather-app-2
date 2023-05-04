@@ -31,7 +31,7 @@ const MainPageStyled=styled.div`
         /* flex-direction: column; */
         color:${(props=>props.theme==="light"? "black" : "white")};
         align-items: center;
-        /* border: 1px solid black; */
+        
       
    
 
@@ -45,7 +45,7 @@ const MainPageStyled=styled.div`
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        /* border: 1px solid black; */
+      
         margin: 10px;
          padding: 10px;
          width: 100%;
@@ -120,6 +120,11 @@ const MainPageStyled=styled.div`
     color:gray
 }
 
+::-webkit-scrollbar {
+  width: 0; 
+  background: transparent; 
+}
+
 
     @media (max-width: 768px) {
     
@@ -129,9 +134,10 @@ const MainPageStyled=styled.div`
         }
 
         .search-bar{
-            width: 100%;
+            width: 80%;
             margin-left: 0.2rem;
-            padding: 0.6rem 0.8rem;
+            padding: 0.5rem 0.8rem;
+            height: 30px;
         }
         .search-bar button{
             margin: 0;
@@ -145,18 +151,24 @@ const MainPageStyled=styled.div`
     padding: 8px;
   
     justify-content:center;
-    gap: 5px;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column-reverse;
 }
 .card-container{
   
-    margin: 8px 8px;
+    margin: 10px 10px;
     height: 5rem;
+    width:170px;
+    min-width: 180px;
+
    
 
     }
     .overview-sub-container{
         margin: 5px;
         padding:5px;
+        overflow: auto;
     }
     .overview-header{
         justify-content: center;

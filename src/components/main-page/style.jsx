@@ -120,10 +120,7 @@ const MainPageStyled=styled.div`
     color:gray
 }
 
-::-webkit-scrollbar {
-  width: 0; 
-  background: transparent; 
-}
+
 
 
     @media (max-width: 768px) {
